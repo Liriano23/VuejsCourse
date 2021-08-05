@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 4 - V argument </title>
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- Ciclo for -->
+        <div v-if="user.age >= 18">
+            <h1>Puedes ver black clover </h1>
+            <img v-bind:src="user.image" width="300" height="300" 
+                alt="Asta image "/>
+                <ul>
+                    <li v-for="(anime, index) in user.animes" :key = "index">
+                      {{index}} = {{ anime }}
+                    </li>
+                </ul>
+        </div>
+        <!-- <h1>{{user.name}}</h1>
+        <h1>{{user.age }}</h1>
+        <h3>{{user.animes}}</h3>
+        <hr />
+        <a v-bind:href="user.url" target="_blank">Google</a>
+        <hr />
+        <img v-bind:src="user.image" width="300" height="300" 
+            alt="Asta image "/> -->
+        
+
+
+
+        <!-- Condicionales  -->
+        <!-- <div v-if="user.age > 18 || user.age == 18">
+            <h1>Puedes ver black clover </h1>
+            <img v-bind:src="user.image" width="300" height="300" 
+                alt="Asta image "/>
+
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/72450703-ff9b-40ac-8307-07b6de3a98fb/dee4mgb-40e1f710-88f2-4e2f-b38b-5a64b0d26749.png/v1/fill/w_1280,h_1264,q_80,strp/black_clover_asta_s_new_form_by_shiuryy_dee4mgb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI2NCIsInBhdGgiOiJcL2ZcLzcyNDUwNzAzLWZmOWItNDBhYy04MzA3LTA3YjZkZTNhOThmYlwvZGVlNG1nYi00MGUxZjcxMC04OGYyLTRlMmYtYjM4Yi01YTY0YjBkMjY3NDkucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.z6_9sFk03U6fG-KMppxtPTkNOwKr3tGvYSUjYaI0xbU" width="300" height="300" 
+                alt="Asta image1 "/>
+            
+        </div>
+        <div v-else-if="user.age < 18">
+            <h1>No puedes ver black clover</h1>
+
+        </div> -->
+        <!-- <h1 v-if="user.age >= 18">Eres mayor de edad</h1>
+        <h1 v-else="user.age <= 18">No puedes ver black clover</h1> -->
+    </div>
+
+
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
